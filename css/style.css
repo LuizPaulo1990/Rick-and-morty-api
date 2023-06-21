@@ -1,0 +1,61 @@
+#rick-logo{
+    width: 40%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#conteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 600px;
+    height: 620px;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 8px white;
+}
+
+.conteudo-foto{
+    width: 280px;
+    height: 350px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    transition: 1s ease;
+}
+
+.conteudo-texto{
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    transition: 1s ease;
+}
+
+.conteudo-foto:hover{
+    opacity: 80%;
+    transform: scale(0.9);
+}
+
+.conteudo-texto:hover{
+    opacity: 80%;
+    transform: scale(.9);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
