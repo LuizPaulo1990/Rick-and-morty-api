@@ -3,6 +3,7 @@
 }
 
 main{
+    min-height: 78vh;
     background-color: black;
     margin: auto;
 }

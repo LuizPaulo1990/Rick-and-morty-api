@@ -1,13 +1,12 @@
 const api = `https://rickandmortyapi.com/api/character?name=`;
 
 
+
 function search() {
     const conteudoPrincipal = document.getElementById('conteudo-principal');
     conteudoPrincipal.innerHTML = '';
 
     let inputSearch = document.getElementById('input-search');
-
-
 
     fetch(api + inputSearch.value)
         .then(resposta => {
@@ -121,15 +120,3 @@ async function createArray(banana, maca, uva) {
 
 
 
-// section.innerHTML += `
-// <div class='cards'>
-// <div>
-// <img src=` + arrayResults[count].image + `>
-// </div>
-// <div class='d-flex text-center flex-column'>
-// <h3>Name:<strong> ` + arrayResults[count].name + ` </strong></h3>
-// <h4><span>Espécie: ` + arrayResults[count].species + ` </span></h4>
-// <h4>Status:<i> ` + arrayResults[count].status + ` </i></h4>
-// </div>
-// </div>
-// `
