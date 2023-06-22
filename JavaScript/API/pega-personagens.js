@@ -52,6 +52,9 @@ function search() {
                      let statusSpan= document.createElement('span');
                      speciesSpan.innerHTML = arrayResults[count].species;
                      statusSpan.innerHTML = arrayResults[count].status;
+                    if(arrayResults[count].name.length > 14){
+                        arrayResults[count].name = arrayResults[count].name.substring(0, 14) + '...';
+                    }
                      nameChar.innerHTML =  'Nome: ' + arrayResults[count].name;
                      speciesChar.innerHTML = 'Espécie: ';
                      statusChar.innerHTML = 'Status: ';
