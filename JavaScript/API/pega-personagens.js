@@ -7,6 +7,7 @@ function search() {
     conteudoPrincipal.innerHTML = '';
 
     let inputSearch = document.getElementById('input-search');
+    
 
     fetch(api + inputSearch.value)
         .then(resposta => {
@@ -96,7 +97,10 @@ function search() {
         })
         .catch(erro => {
             console.log(erro);
-            conteudoPrincipal.innerHTML = 'Not found';
+            const erroText = document.createElement('h1');
+            erroText.innerHTML = 'Esse personagem não existe, tente outro!'
+            conteudoPrincipal.style.textAlign = 'center';
+            conteudoPrincipal.appendChild(erroText);
         })
 
 

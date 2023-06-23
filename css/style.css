@@ -12,6 +12,10 @@ main{
     background-color: white;
     color: red;
 }
+
+#apresentacao{
+    text-align: center;
+}
 .cards{
     background-color: black;
     color: white;
@@ -32,4 +36,8 @@ footer{
     background-color: black;
     color: white;
     height: 100px;
+}
+
+.hiden{
+    display: none;
 }
